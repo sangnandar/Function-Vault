@@ -6,7 +6,7 @@ function johnDoe()
 {
   const customFormulaOne = (a, b) => {
     // some complex calculations yielded a coefficient of 4
-    coefficient = 4;
+    const coefficient = 4;
     return a + (coefficient * b);
   };
 

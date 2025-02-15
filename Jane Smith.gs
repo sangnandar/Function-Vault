@@ -6,7 +6,7 @@ function janeSmith()
 {
   const customFormulaOne = (a, b) => {
     // some complex calculations yielded a coefficient of 3
-    coefficient = 3;
+    const coefficient = 3;
     return a + (coefficient * b);
   };
 
