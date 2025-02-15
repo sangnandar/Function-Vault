@@ -29,3 +29,8 @@ graph TD;
     ]
   }
   ```
+
+## Example
+
+In John Doe's spreadsheet the formula `=customFormulaOne(A2,A3)` returns `9` while in Jane Smith's the same formula returns `7`.
+![image](https://github.com/user-attachments/assets/038a4875-ec0a-4328-b87f-d05722c50679)
