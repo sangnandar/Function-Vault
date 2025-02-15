@@ -82,4 +82,5 @@ graph TD;
 
 Sheets layout:
 
-  ![image](https://github.com/user-attachments/assets/97399f41-bfba-46fa-ade1-0b025e3295d3)
+  ![413563127-97399f41-bfba-46fa-ade1-0b025e3295d3](https://github.com/user-attachments/assets/52593931-76e5-41c8-92bc-57e392ed6151)
+
