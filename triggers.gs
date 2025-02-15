@@ -37,6 +37,7 @@ function doPost(e)
     acc[formula] =
       temp
         ? temp.toString()
+            .replace(/\/\/.*|\/\*[\s\S]*?\*\//g, '') // Remove both single-line and multi-line comments
             .replace(/\s+/g, ' ') // Replace multiple spaces/newlines with a single space
             .replace(/\s*([{}();,:])\s*/g, '$1') // Remove spaces around braces, parentheses, semicolons, etc.
             .trim()
