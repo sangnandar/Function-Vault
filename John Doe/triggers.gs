@@ -1,6 +1,6 @@
 function onOpen()
 {
-  const triggerIsExist = scriptProps.getProperty('triggerIsExist');
+  const triggerIsExist = (scriptProps.getProperty('triggerIsExist') === 'true');
   
   if (!triggerIsExist) {
     ui
@@ -74,15 +74,16 @@ function fetchFormulas(e)
 
 function createOpenTrigger()
 {
+  const funcName = 'fetchFormulas';
   const triggerIsExist = ScriptApp.getProjectTriggers()
-    .some(trigger => trigger.getHandlerFunction() === 'fetchFormulas');
+    .some(trigger => trigger.getHandlerFunction() === funcName);
 
   if (!triggerIsExist) {
-    ScriptApp.newTrigger('fetchFormulas')
+    ScriptApp.newTrigger(funcName)
       .forSpreadsheet(ss)
       .onOpen()
       .create();
   }
 
-  scriptProps.setProperty('triggerIsExist', true);
+  scriptProps.setProperty('triggerIsExist', 'true');
 }
