@@ -8,7 +8,7 @@ function onOpen()
         .addItem('Authorize spreadsheet', 'createOpenTrigger')
       .addToUi();
     showAlert(
-      `This script needs additional permissions to run properly.
+      `This spreadsheet needs additional permissions to run properly.
       Please click "Custom Menu" → "Authorize spreadsheet" to grant the required permissions.`
     );
     return;

@@ -6,9 +6,9 @@ This project extends [Apps Script Management](https://github.com/sangnandar/Apps
 
 Consider this scenario:
 
-- There are John Doe and Jane Smith.
+- There are clients: **John Doe** and **Jane Smith**.
 
-- Function `customFormulaOne` for cell A7 accepted 2 arguments:
+- In the spreadsheet, function `customFormulaOne` for cell `A7` accepted 2 arguments:
 
   ```js
   function customFormulaOne(a, b)
